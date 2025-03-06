@@ -1,0 +1,139 @@
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+  }
+  
+  .login-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Heading */
+  .login-card h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Input Fields */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px; 
+   }
+  
+  /* Extra space specifically between Username & Password */
+  .input-group:nth-child(2) {
+    margin-bottom: 25px; 
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .input-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.85);
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .input-group input:focus {
+    border-color: #ff4d6d;
+    box-shadow: 0px 0px 8px rgba(255, 77, 109, 0.5);
+    outline: none;
+  }
+
+  .input-group select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.85);
+    transition: border 0.3s, box-shadow 0.3s;
+    width: 100%; /* Ensures it takes the same width as the input */
+}
+
+.input-group select:focus {
+    border-color: #ff4d6d;
+    box-shadow: 0px 0px 8px rgba(255, 77, 109, 0.5);
+    outline: none;
+}
+
+  
+  /* Password Toggle Icon */
+  .password-toggle {
+    color: #e9ecef;
+    transition: color 0.3s;
+  }
+  
+  .password-toggle:hover {
+    color: #ff4d6d;
+  }
+  
+  /* Login Button */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #ff4d6d, #ff758c);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(90deg, #e63956, #ff577f);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+  }
+  
+  /* Forgot Password Link */
+  .forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .forgot-password a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .forgot-password a:hover {
+    color: #ffd166;
+    text-decoration: underline;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  

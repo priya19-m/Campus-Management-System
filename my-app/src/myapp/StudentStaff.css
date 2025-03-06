@@ -1,0 +1,255 @@
+/* Global Styles */
+body {
+  background-image: url('https://images.pexels.com/photos/5908319/pexels-photo-5908319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Card Container */
+.card {
+  width: 90%;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Common Container for Students & Staff */
+.card .students-container,
+.card .staff-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #002855;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Student and Staff Cards */
+.student-card,
+.staff-card {
+  width: 280px;
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.student-card:hover,
+.staff-card:hover {
+  transform: scale(1.05);
+}
+
+.student-card img,
+.staff-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.student-card h3,
+.staff-card h3 {
+  font-size: 20px;
+  color: #002855;
+  margin-bottom: 5px;
+}
+
+.student-card p,
+.staff-card p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Form Styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-container input,
+.form-container select {
+  padding: 12px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff;
+}
+
+.form-container button {
+  padding: 14px 22px;
+  border: none;
+  background: linear-gradient(to right, #0056b3, #002855);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.form-container button:hover {
+  background: linear-gradient(to right, #004080, #002855);
+  transform: scale(1.08);
+}
+
+/* Table Styling */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #ffffff;
+}
+
+.data-table th, .data-table td {
+  border: 2px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.data-table th {
+  background: #002855;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.data-table tr:nth-child(even) {
+  background: #f1f3f5;
+}
+
+.data-table tr:hover {
+  background: #dde9f5;
+  transition: 0.3s;
+}
+
+/* Clickable Name */
+.clickable-name {
+  color: #004080;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: larger;
+  text-decoration: underline;
+}
+
+/* Delete Button */
+.data-table button {
+  padding: 10px 15px;
+  border: none;
+  background: linear-gradient(to right, #d90429, #ff4757);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.data-table button:hover {
+  background: linear-gradient(to right, #e63946, #d63031);
+  transform: scale(1.1);
+}
+
+/* Back Button */
+.back-button {
+  display: block;
+  margin: 20px auto;
+  padding: 16px 24px;
+  border: none;
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background: linear-gradient(to right, #e6b800, #cc8400);
+  transform: scale(1.08);
+}
+
+/* Adjust Image Sizes */
+.department-image {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.department-images-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.department-image-card {
+  text-align: center;
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}

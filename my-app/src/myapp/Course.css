@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+  background-image: url('https://images.pexels.com/photos/5908319/pexels-photo-5908319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Course Card Container */
+.course-card {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Course Container */
+.course-container {
+  padding: 20px;
+  text-align: center;
+}
+/* Table Styles (Common for Course & Department) */
+.course-table, .department-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures the borders merge */
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header Styling */
+.course-table th, .department-table th {
+  background-color:lightcoral;
+  color: black;
+  font-size: larger;
+  text-align: center;
+  padding: 12px;
+  border: 2px solid; 
+}
+
+/* Table Row & Cell Styling */
+.course-table td, .department-table td {
+  padding: 10px;
+  border: 3px solid ;
+  text-align: center;
+}
+
+/* Alternating row colors */
+.course-table tr, .department-table tr {
+  background-color: #f9f9f9;
+  border: 3px solid; 
+
+}
+
+
+/* Hover effect on rows */
+.course-table tr:hover, .department-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Add Course Form */
+.add-course-form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.add-course-form input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-course-form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-course-form button:hover {
+  background-color: #218838;
+}
+
+/* Delete Button */
+.department-delete-button , .course-delete-button{
+  background-color:brown;
+  color: rgb(213, 149, 30);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+/* Department Button */
+.department-button {
+  color: black;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: none; 
+}
+
+.department-button:hover {
+  background-color: lightgray;
+}
+
+
+/* Department Button */
+.department-button {
+  background-color: transparent; 
+  color: #ff008c; 
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.department-button:hover {
+  background-color: lightblue; 
+  color: white;
+}
+
+
+/* Add Department Form */
+.add-department-form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.add-department-form input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-department-form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-department-form button:hover {
+  background-color: #218838;
+}
+
+

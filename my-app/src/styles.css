@@ -1,0 +1,169 @@
+/* ================== General Styling ================== */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #f4f7fa, #dee2e6);
+    color: #2c3e50;
+    margin: 0;
+    text-align: center;
+}
+
+/* ================== Title Styling ================== */
+.title {
+    background: linear-gradient(to right, #4a6782, #6c7b91);
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ================== Navigation Bar Styling ================== */
+.nav-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(102, 135, 162, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-top {
+    background: linear-gradient(to right, #7a93ac, #5a6d85);
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background: #ffdd57;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a.active {
+    background: rgba(255, 221, 87, 0.9);
+    color: #2c3e50;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+/* ================== Dropdown Menu Styling ================== */
+.nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+}
+
+.nav-dropdown-content a {
+    color: #2c3e50;
+    padding: 12px;
+    display: block;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-dropdown-content a:hover {
+    background: #ffdd57;
+    color: #2c3e50;
+}
+
+/* ================== Button Styling ================== */
+button {
+    background: linear-gradient(to right, #ffdd57, #ffa502);
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Logout Button */
+.logout-button {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+    z-index: 1100;
+}
+
+.logout-button:hover {
+    background: linear-gradient(to right, #e55039, #d63031);
+    transform: scale(1.1);
+}
+
+/* ================== Responsive Design ================== */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .nav-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        top: 60px;
+        padding: 10px;
+    }
+
+    .nav-dropdown-content {
+        position: static;
+        width: 100%;
+    }
+}

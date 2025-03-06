@@ -1,0 +1,74 @@
+.admin-results-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .admin-results-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .admin-results-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .admin-results-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .admin-results-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Styling for student result cards */
+  .student-result-card {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-result-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .results-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .results-table-container th, .results-table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .results-table-container th {
+    background: #007bff;
+    color: white;
+  }
+  
+  .results-table-container tr:nth-child(even) {
+    background: #f2f2f2;
+  }
+  
